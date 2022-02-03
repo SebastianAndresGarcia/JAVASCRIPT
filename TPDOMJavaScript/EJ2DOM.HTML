@@ -1,0 +1,29 @@
+<!--2- childNodes y nodeValue
+-Haciendo uso de childNodes y nodeValue desarrollar una página y definir un elemento h1 con el
+texto "1". Luego, en forma dinámica rescatar el valor que tiene el nodo de texto, convertirlo a
+entero con la función parseInt de JavaScript, sumarle uno y finalmente asignárselo a la propiedad
+nodeValue del nodo de texto (es decir mostramos un contador)-->
+<!DOCTYPE html>
+<html>
+<head>
+<title> </title>
+<script>
+    var contador=0;
+    function hijo()
+    {
+        var hijos = document.getElementById("texto");
+        console.log(parseInt(hijos.childNodes[0].nodeValue));
+        contador =parseInt(hijos.childNodes[0].nodeValue)+1; //Modifica el valor del nodo texto.
+        console.log(contador);
+        document.getElementById("texto").innerHTML = (contador);
+    } 
+</script>
+</head>
+<body>
+   <h1 id="texto">
+       1
+    </h1>
+   Contador
+   <input type="button" value="Contador" onClick="hijo()"> 
+</body>
+</html> 

@@ -1,0 +1,35 @@
+<!--Haciendo uso de 3 input type=”text” solicitar el ingreso del nombre de nombre de usuario y la carga
+por duplicado de la clave (clave y repetir clave). Mostrar mensajes de error si no se carga alguno de
+los datos o las claves son distintas.-->
+<html>
+    <head>
+        <script>
+            
+            function Validar(){
+            var usuario="";
+            var contrasenia="";
+            var Repcontrasenia="";
+                usuario=document.getElementById("usuario").value;
+                contrasenia=document.getElementById("contrasenia").value;
+                Repcontrasenia=document.getElementById("Repcontrasenia").value;
+                console.log(usuario+" "+contrasenia+" "+Repcontrasenia);
+                if(usuario==""||contrasenia==""|| Repcontrasenia==""){
+                    alert("Complete todos los campos");
+                }else if(contrasenia!=Repcontrasenia){
+                    alert("Error, las contrasenias son distintas");
+                }else 
+                alert("Usuario cargado satisfactoriamente");
+            }
+                        
+        </script>
+    </head>
+    <body>
+          Nombre de Usuario<br>
+         <input type="text" id="usuario" name="usuario" /><br>
+         Contrasenia<br>
+         <input type="text" id="contrasenia" name="contrasenia" /><br>
+         Repita contrasenia<br>
+         <input type="text" id="Repcontrasenia" name="Repcontrasenia" /><br><br>
+         <input type="button" value="enviar" onclick="Validar()"><br>
+    </body>
+</html>

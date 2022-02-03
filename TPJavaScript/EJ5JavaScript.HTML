@@ -1,0 +1,27 @@
+<!--5- Confeccionar una página que muestre un botón “Validar” y dos objetos de la clase RADIO
+solicitando que seleccione si es mayor de 18 años o no. Al presionar el botón mostrar un alert
+indicando si puede ingresar al sitio o no. 
+-->
+<html>
+    <head>
+        Eres mayor a 18 años?<br>
+        <script>
+            function ValidarEdad(){
+                               
+                if(document.getElementById("mayor").checked){
+                    alert("Si puede ingresar al sitio");
+                }else {
+                    alert("No puede ingresar al sitio");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="radio" name="Edad" id="mayor">
+        <label for="si">Si </label><br>
+        <input type="radio" name="Edad" id="menor">
+        <label for="no">No </label><br>
+        <input type="button" value="VALIDAR" onclick="ValidarEdad()">
+        <br/> <br/>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!--Confeccionar una función que inicialice la propiedad border de la tabla con el valor 5 haciendo uso
+de la función setAttribute. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problema</title>
+<script >
+    function definirAtributo(){
+        var tabla = document.getElementById("tabla1");
+        tabla.setAttribute("border", "5");
+    }
+</script>
+<link rel="StyleSheet" href="estilos.css" type="text/css">
+</head>
+<body>
+    <br>
+<table id="tabla1">
+<tr>
+<td>11</td><td>12</td>
+</tr>
+<tr> 
+<td>21</td><td>22</td>
+</tr>
+</table>
+<br>
+<input type="button" value="definir la propiedad border de la tabla" onClick="definirAtributo()">
+</body>
+</html> 

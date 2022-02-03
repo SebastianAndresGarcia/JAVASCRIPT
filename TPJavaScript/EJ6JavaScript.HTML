@@ -1,0 +1,42 @@
+<!--6- Confeccionar una página que permita abrir otra ventana (modal) cuando se presiona un
+botón. Dicha ventana debe tener como ancho 600 pixeles y alto 300 pixeles.
+https://desarrolloweb.com/articulos/jquery-ui-dialog.html -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>jQuery UI Dialog - Dialogo modal con dimensiones personalizadas</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script>
+$(function () {
+$("#dialog").dialog({
+autoOpen: false,
+modal: true,
+buttons: {
+"Cerrar": function () {
+$(this).dialog("close");
+}
+}
+});
+$("#abrir")
+.button()
+.click(function () {
+$("#dialog").dialog("option", "width", 600);
+$("#dialog").dialog("option", "height", 300);
+$("#dialog").dialog("open");
+});
+});
+</script>
+</head>
+
+<body>
+
+<div id="dialog" title="Ventana Modal">
+<p>Mi Primer Ventana</p>
+</div>
+<button id="abrir">Abrir diálogo</button>
+</body>
+
+</html>

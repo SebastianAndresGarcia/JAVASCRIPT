@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            var resto=0;
+            var dni;
+            var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z',
+             'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T']; 
+
+            function calcularDNI(){
+                dni=document.getElementById("dni").value;
+                resto=dni%23;
+                document.write('La letra que le corresponde a su documento es: ');
+                document.write(letras[resto]);
+                return letras[resto];
+            }
+                        
+        </script>
+    </head>
+    <body>
+        Ingrese el numero de dni<br>
+         <input type="number" id="dni" name="dni" /><br>
+         <input type="button" value="enviar" onclick="calcularDNI()"><br>
+    </body>
+</html>
+

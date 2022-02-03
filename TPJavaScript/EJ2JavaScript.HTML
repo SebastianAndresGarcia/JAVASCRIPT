@@ -1,0 +1,36 @@
+<!--2- Crear un array llamado meses y que almacene el nombre de los doce meses del año.
+Mostrar por pantalla los doce nombres utilizando la función document.write(text) haciendo uso
+primero de la estructura iterativa for y luego de igual manera con la estructura iterativa while.-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var i=0;
+            var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+            'Julio', 'Agosto','Setiembre','Octubre','Noviembre','Diciembre'];
+           
+            
+            document.write('Con ciclo for: ');
+            document.write('<br>');
+            for (let index = 0; index < meses.length; index++) {
+                
+                document.write(meses[index]); 
+                document.write('<br>');
+            }
+            
+            document.write('<br>');
+            document.write('Con ciclo while: ');
+            document.write('<br>');
+            while(true){
+                document.write(meses[i]);
+                document.write('<br>');
+                i++;
+                if(i==11){
+                    break;
+                }
+            }
+        </script>
+    </body>
+</html>

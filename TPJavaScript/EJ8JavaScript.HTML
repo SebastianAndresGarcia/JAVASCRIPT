@@ -1,0 +1,86 @@
+<!--8- Calculadora
+Realice una calculadora funcional utilizando HTML y JS -->
+
+<html>
+    <head>
+        <script  type="text/javascript" src="calculadora.js">
+        </script>
+    </head>
+    <body>
+    <form name="calculadora">
+        <table style="border: 3px solid #000; text-align:center;">
+         <tr style="text-align:center;">
+         <td colspan = "4">
+         <!--   <form name="resultado" id="resultado"> -->
+                <input type="textfield" name="resultado" id="resultado" value="">
+            <!--<input id="resultado" name="resultado" type="textfield" value="">-->    
+           <!--   </form>  -->
+         
+         </td>
+         </tr>
+        
+         <tr style="text-align:center;">
+         <td>
+         <input type="button" value="7" onClick="calculadora.resultado.value+='7'">
+
+         </td>
+         <td>
+         <input type="button" value="8" onClick="calculadora.resultado.value+='8'">
+         </td>
+         <td>
+         <input type="button" value="9" onClick="calculadora.resultado.value+='9'">
+         </td>
+         <td>
+         <input type="button" value="/" onClick="calculadora.resultado.value+='/'">
+         </td>
+         </tr>
+        
+         <tr style="text-align:center;">
+         <td>
+         <input type="button" value="4" onClick="calculadora.resultado.value+='4'">
+         </td>
+         <td>
+         <input type="button" value="5" onClick="calculadora.resultado.value+='5'">
+         </td>
+         <td>
+         <input type="button" value="6" onClick="calculadora.resultado.value+='6'">
+         </td>
+         <td>
+         <input type="button" value="*" onClick="calculadora.resultado.value+='*'">
+         </td>
+         </tr>
+        
+         <tr style="text-align:center;">
+         <td>
+         <input type="button" value="1" onClick="calculadora.resultado.value+='1'">
+         </td>
+         <td>
+         <input type="button" value="2" onClick="calculadora.resultado.value+='2'">
+         </td>
+         <td>
+         <input type="button" value="3" onClick="calculadora.resultado.value+='3'">
+         </td>
+         <td>
+         <input type="button" value="-" onClick="calculadora.resultado.value+='-'">
+         </td>
+         </tr>
+         <tr style="text-align:center;">
+         <td>
+         <input type="button" value="0" onClick="calculadora.resultado.value+='0'"> 
+         </td>
+         <td>
+         <input type="button" value="=" onClick= "calculo()">
+         </td>
+         <td>
+             <input type="button" value="C" onClick="calculadora.resultado.value=''">
+         </td>
+         <td>
+         <input type="button" value="+" onClick="calculadora.resultado.value+='+'">
+         </td>
+         </tr>
+        
+        </table>
+        
+        </form>
+    </body>
+</html>

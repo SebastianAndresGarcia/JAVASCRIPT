@@ -1,0 +1,30 @@
+<!--1- getElementById
+-Mediante DOM y el método getElementById crear una página html y dado el siguiente párrafo:
+<p id=”miparrafo”> Esto es una prueba </p>
+Permitir cambiar el tamaño de la fuente de un párrafo. Para esto crear tres botones (fuente
+pequeña (10), fuente mediana(13) y fuente grande(20)). Según que botón se seleccione aplicar el
+tamaño que corresponde.-->
+<!DOCTYPE html>
+<html>
+<head>
+<title> </title>
+<script>
+    function cambiarTamFuente(fuente){
+        console.log(fuente);
+        document.getElementById("miparrafo").style.fontSize = (fuente);
+    }
+</script>
+</head>
+<body>
+    <p id="miparrafo"> Esto es una prueba </p> 
+    
+    <input type="button" value="Cambiar a"
+    onClick="cambiarTamFuente('10px')"> Fuente Pequenia<br><br>
+    
+    <input type="button" value="Cambiar a"
+    onClick="cambiarTamFuente('13px')"> Fuente Mediana<br><br>
+    
+    <input type="button" value="Cambiar a"
+    onClick="cambiarTamFuente('20px')"> Fuente Grande<br><br>
+</body>
+</html> 

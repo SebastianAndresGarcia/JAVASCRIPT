@@ -1,0 +1,25 @@
+<!--Cree una función cambiarColor que haciendo uso de la función getElementsByTagName asigne el
+color azul (blue) a todos los párrafos de la página. -->
+<!DOCTYPE html>
+<html>
+<head>
+<title> </title>
+<script>
+    function cambiarColor(){
+        var lista=document.getElementsByTagName("p");
+        for (let index = 0; index < lista.length; index++) {
+            lista[index].style.backgroundColor='#0000FF';
+        }
+    }
+</script>
+</head> 
+<body>
+<p>Párrafo número 1.</p>
+<p>Párrafo número 2.</p>
+<p>Párrafo número 3.</p>
+<p>Párrafo número 4.</p>
+<p>Párrafo número 5.</p>
+<p>Párrafo número 6.</p>
+<input type="button" value="Cambiar Color" onClick="cambiarColor()">
+</body>
+</html> 

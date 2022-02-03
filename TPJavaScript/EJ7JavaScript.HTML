@@ -1,0 +1,22 @@
+<!--Agregue el código necesario y realice una función javascript de tal manera que cada vez que se hace
+doble clic sobre el div “numero” capture el valor asignado en el div duplique dicho valor
+(multiplicando por 2) y reemplace el valor del div con el nuevo valor duplicado.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function dobleClick(){
+  var valor = document.getElementById("parrafo").innerHTML;
+  document.getElementById("parrafo").innerHTML = (valor *= 2);
+}</script>
+</head>
+<body>
+<div>
+      Haga doble click sobre el número
+      <p id = "parrafo" ondblclick="dobleClick()">2</p>
+    </div>
+
+</body>
+</html>

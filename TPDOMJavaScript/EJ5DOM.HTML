@@ -1,0 +1,48 @@
+<!--Cree una función mostrarSoluciones que sea llamada al presionar un botón y agregue dos marcas
+de tipo (li) con los textos solución 1 y solución 2 a la etiqueta <ul> existente. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function mostrarSoluciones(){
+        var ul = document.getElementById("lista");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode("Solucion 1" + "Solucion3"));
+        ul.appendChild(li);
+        
+        li = document.createElement("li");
+        li.appendChild(document.createTextNode("Solucion 2"));
+        ul.appendChild(li);
+    }
+    </script> 
+</head>
+<body>
+<ul id="lista">
+</ul>
+<input type="button" value="agregar dos (li)" onClick="mostrarSoluciones()">
+</body>
+</html>  
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+<title>Problema</title>
+<script>
+    var contador=1;
+function agregar()
+{
+ var nt=document.createTextNode('Nuevo texto '+contador+'-');
+ var nparrafo=document.getElementById('parrafo');
+ nparrafo.appendChild(nt);
+ contador++;
+}
+</script>
+<link rel="StyleSheet" href="estilos.css" type="text/css">
+</head>
+<body>
+<p id="parrafo">Texto inicial:</p>
+<input type="button" value="Agregar nodo de texto" onClick="agregar()">
+</body>
+</html>
+-->
